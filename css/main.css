@@ -1,0 +1,99 @@
+@font-face{
+    font-family: Roboto;
+    src: url("../other/Roboto-Bold.ttf");
+}
+@font-face{
+    font-family: grass;
+    src: url("../other/Cursive_Script.ttf");
+}
+body{
+    font-family: Roboto;
+    background-color: #eeeeee;
+}
+.header{
+    width:100%;
+    background-color:#fff;
+    font-size:36px;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:5px;
+    border: 5px solid #000;
+    border-left:none;border-right:none;
+}
+
+.main{
+    width:950px;
+    height: 440px;
+    margin-left:auto;margin-right:auto;
+    vertical-align: top;
+    padding:25px;
+    background-color:#ffffff;
+    border: #000 5px solid;
+    border-radius: 20px;
+    margin-top:5px;
+    box-shadow: 9px 9px 9px 9px rgba(150,150,150,0.8) ;
+}
+.mainB{
+    width:450px;
+    height: 450px;
+    padding-top:0px;
+    display: inline-block;
+    vertical-align:top;
+    margin-top: -15px;
+}
+.mainLp{
+    text-align:center;
+    font-size:30px;
+    margin-top:-4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    width:fit-content;
+    padding-left:23px;padding-right:23px;
+}
+.mainBt{
+    padding-left:80px;
+    padding-top:150px;
+    margin-right:75px;
+}
+.mainBtD{
+    background-color: #eeeeee;
+    border: 5px solid #000;
+    border-radius: 50px;
+    text-align: center;box-shadow: 5px 5px 5px 5px rgba(150,150,150,0.8) ;
+}
+.mainBt1{
+    font-size:30px;
+}
+.mainBt2{
+    margin-top:-20px;
+    font-size:30px;
+}
+::-webkit-scrollbar {
+    display : none; /* Chrome Safari */ 
+}
+/* Settings */
+.set{
+    visibility: hidden;
+    width:1000px;
+    height:490px;
+    background-color:#ffffff;
+    border: #000 5px solid;
+    border-radius: 20px;
+    position: absolute;
+    top:73px;
+    transform: translate(-50%,0);
+    left:50%;
+}
+.sTitle{
+    font-size:36px;
+    margin:0;
+    padding-top:10px;
+    padding-left:25px;
+}
+.sP1{
+    font-size:30px;
+    margin:0;
+    padding-top:10px;
+    padding-left:62px;
+}

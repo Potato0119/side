@@ -1,0 +1,104 @@
+@keyframes btn-menu-Visible{
+    0%{opacity:0;width:44px;}
+    60%{opacity:1;}
+    70%{width: 494px;}
+    100%{opacity: 1;}    
+}
+@keyframes btn-menu-Hidden{
+    0%{opacity:1;width: 494px;}
+    100%{opacity:0;width:44px;}    
+}
+@keyframes btn-text-Visible {
+    0%{visibility: hidden;}
+    50%{visibility: hidden;}
+    100%{visibility: visible;}  
+}
+@keyframes btn-text-Hidden {
+    0%{visibility: visible;}
+    50%{visibility: hidden;}
+    100%{visibility: hidden;}  
+}
+@keyframes start {
+    0%{opacity: 0;}
+    51%{opacity: 0;}
+    100%{opacity: 1;}  
+}
+.btn{
+    /*圓形基本宣告*/
+    width:44px;
+    height:44px;
+    border-radius:999em;
+    background-color:#aaaaaa;
+    /*圓形邊框宣告*/
+    border-width:3px;
+    border-color:#000;
+    border-style:solid;
+    /*位置宣告*/
+    position: fixed;
+    top:9px;
+    left:15px;
+    z-index:1;
+    animation: start 2s;
+}
+.btn img{
+    width:30px;
+    height:30px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.btn-menu{
+    /*形狀*/
+    height:44px;
+    background-color:#cccccc;
+    border-radius:25px;
+    /*邊框*/
+    border-width:3px;
+    border-color:#000000;
+    border-style:solid;
+    /*定位*/
+    position: absolute;
+    top:-3px;
+    left:-3px;
+    z-index:-1;
+    /*動畫要改變的*/
+    width:44px; /*494px*/
+}
+.btn:focus .btn-menu{
+    animation: btn-menu-Visible 1s;
+    width: 494px;
+    opacity:1;
+}
+.btn:not(:focus) .btn-menu{
+    animation: btn-menu-Hidden 1s;
+}
+.btn-text{
+    position: absolute;
+    transform: translate(0%,-50%);
+    top:5px;
+    left:10px;
+    visibility: hidden;
+    display:inline;
+    width: 444px;
+    margin-left:20px;
+    font-size: 16px;
+}
+.btn:focus .btn-text{
+    animation: btn-text-Visible 1s;
+    visibility: visible;
+}
+.btn:not(:focus) .btn-text{
+    animation: btn-text-Hidden 1s;
+    visibility: hidden;
+}
+.btn-text li{
+    display:inline;
+}
+.btn-text li p{
+    display:inline;
+}
+.btn-text li p a{
+    color:#000;
+    text-decoration: none;
+}
