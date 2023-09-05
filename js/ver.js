@@ -224,6 +224,6 @@ function select(){
         document.getElementById("sel_t3").textContent='\xa0';
         document.getElementById("sel_t4").textContent='更新時間: 2023/04/02';
         document.getElementById("sel_t5").textContent="\xa0";
-        document.getElementById("sel_t6").textContent="(3.1415926535897932384626433832795028841971693993751058209749445)";
+        document.getElementById("sel_t6").textContent="\xa0";
     }
 }
