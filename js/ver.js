@@ -226,4 +226,13 @@ function select(){
         document.getElementById("sel_t5").textContent="\xa0";
         document.getElementById("sel_t6").textContent="\xa0";
     }
+    if (obj==25){
+        document.getElementById("sel_title").textContent='版本: 3.2.0';
+        document.getElementById("sel_t1").textContent='做了全面維護';
+        document.getElementById("sel_t2").textContent='重新上架網站';
+        document.getElementById("sel_t3").textContent='\xa0';
+        document.getElementById("sel_t4").textContent='更新時間: 2023/09/05';
+        document.getElementById("sel_t5").textContent="\xa0";
+        document.getElementById("sel_t6").textContent="\xa0";
+    }
 }
