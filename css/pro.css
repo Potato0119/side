@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .pro {
   position: absolute;
   top: 200%;
@@ -89,3 +90,77 @@
 .itemProject img:not(:hover) {
   animation: ProimgSmall 0.5s;
 }
+=======
+.pro{
+    position: absolute;
+    top:200%;
+    left:0%;
+    width:100%;
+    height:100%;
+}
+.BGpro{
+    width:1000px;
+    height:520px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    margin-top:5px;
+    border: 5px solid #000;
+    border-radius: 20px;
+    box-shadow: 9px 9px 9px 9px rgba(150,150,150,0.8) ;
+}
+.Ptitle{
+    margin-top:20px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    vertical-align:top;
+    background-color:#eee;
+    border: 5px solid #000;
+    border-radius: 20px;
+    padding: 7.09px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgba(150,150,150,0.8);
+}
+@keyframes start {
+    0%{opacity: 0;}
+    51%{opacity: 0;}
+    100%{opacity: 1;}  
+}
+.itemProject{
+    width:210px;
+    padding:50px;
+    padding-top:80px;
+    display:inline-block;
+    vertical-align:top;
+    animation: start 2s;
+}
+.itemProject img{
+    width:180px;
+    height:180px;
+}
+.itemProject p{
+    font-size:30px;
+    font-weight:bold;
+}
+.itemProject a{
+    text-decoration: none;
+}
+@keyframes ProimgBig{
+    0%{width:180px;height:180px;}
+    100%{width:200px;height:200px;}
+}
+@keyframes ProimgSmall{
+    0%{width:200px;height:200px;}
+    100%{width:180px;height:180px;}
+}
+.itemProject img:hover{
+    animation: ProimgBig .5s;
+    width:200px;height:200px;
+}
+.itemProject img:not(:hover){
+    animation: ProimgSmall .5s;
+}
+>>>>>>> 27096f6690f38a004d800af0e883b5ef4f153e29

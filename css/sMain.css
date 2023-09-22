@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
   font-family: Roboto;
   src: url("../other/Roboto-Bold.ttf");
@@ -52,3 +53,40 @@ body {
 ::-webkit-scrollbar {
   display: none; /* Chrome Safari */
 }
+=======
+@font-face{
+    font-family: Roboto;
+    src: url("../other/Roboto-Bold.ttf");
+}
+@keyframes tip{
+    0%{opacity: 1;visibility: visible;}
+    10%{opacity: 0;}
+    20%{opacity: 1;}
+    30%{opacity: 0;}
+    40%{opacity: 1;}
+    90%{opacity: 1;}
+    99%{visibility:visible;}
+    100%{opacity: 0;visibility: hidden;}
+}
+body{
+    font-family: Roboto;
+    background-color: #eeeeee;
+}
+.header{
+    width:100%;
+    background-color:#fff;
+    font-size:36px;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:5px;
+    border: 5px solid #000;
+    border-left:none;border-right:none;
+}
+.tip{
+    animation: tip 5s;
+    visibility: hidden;
+}
+::-webkit-scrollbar {
+    display : none; /* Chrome Safari */ 
+}
+>>>>>>> 27096f6690f38a004d800af0e883b5ef4f153e29
